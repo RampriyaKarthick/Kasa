@@ -1,0 +1,40 @@
+
+.welcomepage_img {
+    object-fit: cover;
+    height: 150px;
+    width: 85%;
+    border-radius: 15px;
+
+     
+  }
+  
+  .welcomecontent_image-container {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+
+  }
+
+  .kasa-logement-list{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+   
+    margin:0 65px;
+    }
+
+    .kasa-logement-div{
+        display:flex;
+        flex-direction: column;
+        margin:5px;
+     
+        justify-content: center;
+        width:200px;
+        height:200px;
+    }
+    
+    .kasa-logement-image{
+       display:grid;
+       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+
+    }
+  

@@ -5,7 +5,7 @@ import Home from './pages/Accueil/index.jsx';
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Apropos from "./pages/Apropos/index.jsx"
-
+import LogementDetail from './pages/LogementDetail/index.jsx';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,6 +16,7 @@ root.render(
     <Route path="/" element={<Home/>} />
     <Route path="/accueil" element={<Home/>} />
     <Route path="/apropos" element={<Apropos/>} />
+    <Route path="/logement/:id" element={<LogementDetail />} />
     </Routes>
   </Router>
     

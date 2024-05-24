@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.header_image{
+    height: 50px;
+    margin-left: 100px;
+}
+.header_links{
+    display:flex;
+    justify-content: space-between;
+    gap:30px;
+    text-decoration: none;
+    margin-right: 100px;
+}
