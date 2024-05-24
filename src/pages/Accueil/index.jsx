@@ -8,8 +8,8 @@ import { useNavigate } from 'react-router-dom';
 
 function Home() {
   const navigate = useNavigate();
-  const handleClick = (id) => {
-    navigate(`/logement/${id}`);
+  const handleClick = (logement) => {
+    navigate(`/logement/${logement.id}`);
   };
 
   return (
@@ -22,9 +22,9 @@ function Home() {
      </div>
     <ul className="kasa-logement-list">
 {
-  logementList.map((x) => <div className="kasa-logement-div" onClick={() => handleClick(x.id)}>
-  <img className="kasa-logement-image" src={x.cover} alt="imagecover"/>
-  <h6 className="kasa-logement-title">{x.location}</h6></div>)
+  logementList.map((logement) => <div className="kasa-logement-div" key={logement.id} onClick={() => handleClick(logement)}>
+  <img className="kasa-logement-image" src={logement.cover} alt="imagecover"/>
+  <h6 className="kasa-logement-title">{logement.location}</h6></div>)
 }
     </ul>
     </div>
@@ -34,5 +34,4 @@ function Home() {
     </div>
   );
 }
-
 export default Home;
