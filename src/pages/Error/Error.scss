@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.footer_main_div {
+  font-family: 'Montserrat';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  .footer_number {
+    color: #ff6060;
+    font-size: 125px;
+    margin: 25px;
+  }
+
+  .footer_text {
+    color: #ff6060;
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  .footer_link {
+    margin-bottom: 75px;
+  }
+}
