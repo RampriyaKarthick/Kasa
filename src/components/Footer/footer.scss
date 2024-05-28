@@ -1,0 +1,19 @@
+.footer_content {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: 15px;
+  
+    img {
+      width: 100px;
+      margin-top: 50px;
+    }
+  
+    p {
+      color: white;
+      margin-bottom: 50px;
+    }
+  }
+  

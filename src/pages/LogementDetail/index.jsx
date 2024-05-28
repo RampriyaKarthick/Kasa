@@ -5,9 +5,10 @@ import { logementList } from '../../datas/logementList';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import { faStar as faStarSolid } from '@fortawesome/free-solid-svg-icons';
-import { faStar as faStarRegular } from '@fortawesome/free-regular-svg-icons';
+
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
+import "../../pages/LogementDetail/logementDetail.scss"
 
 function LogementDetail() {
     const [descriptionIndex, showDescriptionIndex] =useState(false);
@@ -31,11 +32,11 @@ function LogementDetail() {
         const emptyStars = 5 - fullStars
 
         for (let i = 0; i < fullStars; i++) {
-            stars.push(<FontAwesomeIcon key={`full-${i}`} icon={faStarSolid} />);
+            stars.push(<FontAwesomeIcon key={`full-${i}`} icon={faStarSolid} className="star-filled"/>);
         }
     
         for (let i = 0; i < emptyStars; i++) {
-            stars.push(<FontAwesomeIcon key={`empty-${i}`} icon={faStarRegular} />);
+            stars.push(<FontAwesomeIcon key={`empty-${i}`} icon={faStarSolid} className="star-unfilled" />);
         }
           return stars;
         
@@ -50,29 +51,48 @@ function LogementDetail() {
   return (
     <div>
     <Header/>
-    
+    <div className="logement_main_div">
     <img src={logement.cover} alt="imagecover" />
-    <h4>{logement.title}</h4>
-    <h6>{logement.location}</h6>
+    <div>
+    <div className='logement_title_div'>
+    <p className='logement_title'>{logement.title}</p>
     <h6>{logement.host.name}</h6>
-    <div className="star-rating">{renderStars(logement.rating)}</div>
-    <div>{logement.tags.map((tag, index) => (
-            <span key={index}>{tag}</span>
-          ))}</div>
+    </div>
+   
+    <h6>{logement.location}</h6>
+   <div className="tag_star_div">
+   <div className="tags" >{logement.tags.map((tag, index) => (
+            <span className="tag_span" key={index}>{tag}</span>
+          ))}
+          </div>
+          <div className="star-rating">{renderStars(logement.rating)}</div>
+   </div>
+ 
+   
           <div>
           <div>
           <h3>Description</h3>
    
-    <FontAwesomeIcon onClick={() => toggleDescriptionchevron(logement.index)} icon={descriptionIndex === logement.index ? faChevronUp : faChevronDown} />
-          </div>
-          {descriptionIndex === logement.index &&  <p>{logement.description}</p>}
-          <div>
+   <FontAwesomeIcon onClick={() => toggleDescriptionchevron(logement.index)} icon={descriptionIndex === logement.index ? faChevronUp : faChevronDown} />
+   {descriptionIndex === logement.index &&  <p>{logement.description}</p>}
+         </div>
+
+           <div>
           <h3>Equipments</h3>
-          <FontAwesomeIcon onClick={() => toggleEquipmentschevron (logement.index)} icon={equipmentsIndex === logement.index ? faChevronUp : faChevronDown} />
+          <FontAwesomeIcon onClick={() => toggleEquipmentschevron (logement.index)} icon={equipmentsIndex === logement.index ? faChevronUp : faChevronDown} 
+           />
          {equipmentsIndex === logement.index && <p>{logement.equipments}</p> } 
           </div>
-         
           </div>
+    
+    </div>
+    
+        
+        
+         
+          
+    </div>
+ 
          
     
     <Footer/>

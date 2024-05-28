@@ -1,7 +1,7 @@
 
 import Footer from "../../components/Footer"
 import Header from "../../components/Header"
-import "../../styles/about.scss"
+import "../../pages/Apropos/about.scss"
 
 import About from "../../components/About/index"
 

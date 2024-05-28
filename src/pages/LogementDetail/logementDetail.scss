@@ -1,0 +1,67 @@
+$primary-color: #ff6060;
+$secondary-color: #e3e3e3;
+$white-color: #ffffff;
+
+@mixin tag-styles {
+  background-color: $primary-color;
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: $white-color;
+  font-size: 10px;
+}
+
+@mixin star-color($color) {
+  color: $color;
+}
+
+.logement_main_div {
+  margin-left: 80px;
+
+  img {
+    object-fit: cover;
+    height: 250px;
+    width: 95%;
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+}
+
+.logement_title {
+  color: $primary-color;
+  font-size: 24px;
+}
+
+.logement_title_div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tag_star_div {
+  display: flex;
+  justify-content: space-between;
+  
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .star-rating {
+    display: flex;
+    gap: 5px;
+    font-weight: 100;
+
+    .star-filled {
+      @include star-color($primary-color);
+    }
+
+    .star-unfilled {
+      @include star-color($secondary-color);
+    }
+  }
+}
+
+.tag_span {
+  @include tag-styles;
+}
