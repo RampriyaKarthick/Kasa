@@ -1,15 +1,4 @@
-.welcomepage_img {
-  object-fit: cover;
-  height: 150px;
-  width: 85%;
-  border-radius: 15px;
-}
 
-.welcomecontent_image-container {
-  display: flex;
-  justify-content: center;
-  margin: 25px 0;
-}
 
 .kasa-logement-list {
   display: grid;
@@ -26,7 +15,7 @@
   }
 
   .kasa-logement-image {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
+   
   }
 }

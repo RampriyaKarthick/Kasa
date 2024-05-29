@@ -50,15 +50,3 @@ $gap: 25px;
   }
 }
 
-.aboutpage_img {
-  object-fit: cover;
-  height: $image-height;
-  width: $image-width;
-  border-radius: $border-radius-large;
-}
-
-.aboutcontent_image-container {
-  display: flex;
-  justify-content: center;
-  margin: $gap 0;
-}

@@ -4,6 +4,7 @@ import { logementList } from '../../datas/logementList';
 import "../../pages/Accueil/accueil.scss"
 import rock from "../../assets/rock.jpg"
 import { useNavigate } from 'react-router-dom';
+import Banner from '../../components/Banner';
 
 function Home() {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ function Home() {
     <div className='main-div'>
     <div className="welcomecontent_image-container">
      
-     <img className="welcomepage_img" src={rock} alt="about_page_image"/>
+    <Banner src={rock} alt="welcome_page_image" />
      </div>
     <ul className="kasa-logement-list">
 {

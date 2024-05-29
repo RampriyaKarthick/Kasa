@@ -34,6 +34,7 @@ import React, {useState} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import aboutPage from "../../assets/aboutPage.jpg"
+import Banner from '../Banner';
 
 
 function Index() {
@@ -46,7 +47,7 @@ function Index() {
     <div className="xxx">
      <div className="aboutcontent_image-container">
      
-     <img className="aboutpage_img" src={aboutPage} alt="about_page_image"/>
+     <Banner src={aboutPage} alt="about_page_image" />
      </div>
       {aboutList.map((about, index) => (
   <div key={about.id} className='about_parent_container'>
