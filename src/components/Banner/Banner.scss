@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center; 
     align-items: center; 
+    position: relative;
    
   }
   
@@ -16,5 +17,22 @@
     height: $image-height;
     width: $image-width;
     border-radius: $border-radius-large;
+    object-fit:cover;
+   
+  }
+
+  .banner-container img{
+    filter:brightness(0.5)
   }
   
+
+  .banner-text {
+    position: absolute;
+   
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }

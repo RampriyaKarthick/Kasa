@@ -5,6 +5,7 @@
     padding: 10px 20px;
     margin-top: 10px;
   
+  
     .header_image {
       height: 50px;
       margin-left: 100px;
@@ -13,9 +14,37 @@
     .header_links {
       display: flex;
       justify-content: space-between;
-      gap: 30px;
+      gap: 25px;
       text-decoration: none;
       margin-right: 100px;
     }
+    @media (max-width: 768px) {
+      .header{
+        display: flex;
+        gap: 56px;
+        justify-content: space-between;
+        align-items: center;
+      }
+    
+    .header_image{
+      display: flex;
+      align-items: center;
+      margin-left:25px;
+      width:auto;
+    }
+    
+    .header_image img{
+      height: 25px;
+     
+    }
+   .header_links {
+    display: flex;
+    margin-left: 75px;
+    gap:10px;
+    right:5px;
+
+   
+      
+    }
   }
-  
+}

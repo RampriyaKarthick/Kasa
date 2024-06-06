@@ -1,0 +1,15 @@
+.chevron-icon {
+    transition: transform 0.2s ease;
+  }
+
+  .open, .close{
+    transform:rotate(180deg);
+  }
+
+  .about_title_container .chevron-icon{
+   margin: 5px;
+  }
+
+  .about_title_container h3{
+    margin-left: 5px;
+  }

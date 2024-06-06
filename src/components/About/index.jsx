@@ -30,39 +30,29 @@
 
 // export default About
 import { aboutList } from '../../datas/about'
-import React, {useState} from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import React from 'react'
+
 import aboutPage from "../../assets/aboutPage.jpg"
 import Banner from '../Banner';
+import Dropdown from '../Dropdown';
 
 
 function Index() {
-    const [currentIndex, setCurrentIndex] = useState(null);
-
-    const toggleChevron = (index) => {
-      setCurrentIndex(currentIndex === index ? null : index);
-    };
+ 
   return (
     <div className="xxx">
      <div className="aboutcontent_image-container">
      
-     <Banner src={aboutPage} alt="about_page_image" />
+     <Banner src={aboutPage} alt="about_page_image" showText={false} />
      </div>
-      {aboutList.map((about, index) => (
-  <div key={about.id} className='about_parent_container'>
-  <div className="about_container">
-
-  <div className="about_title_container">
-  <h3>{about.title}</h3>
-            <FontAwesomeIcon onClick={() => toggleChevron(index)} icon={currentIndex === index ? faChevronUp : faChevronDown} style={{ marginLeft: '8px' }} />
-          </div>
-          {currentIndex === index && <p>{about.content}</p>}
-  </div>
-
+     
+  <div className='about_parent_container'>
+  {aboutList.map((about, index) => (
+                <Dropdown key={about.id} title={about.title} content={about.content} />
+            ))}
  
         </div>
-))}
+
 
     </div>
   )

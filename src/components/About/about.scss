@@ -32,7 +32,9 @@ $gap: 25px;
 
 .about_parent_container {
   display: flex;
-  justify-content: center;
+ 
+  align-items:center ;
+  flex-direction: column;
 }
 
 .about_title_container {
