@@ -21,8 +21,19 @@
       gap: 25px;
       text-decoration: none;
       margin-right: 50px;
-      margin-top: 10px;
+      margin-top: 20px;
     }
+
+    .header_links a {
+      text-decoration: none;
+      color: black; 
+    }
+    
+    .header_links .active-link {
+      text-decoration: underline;
+      color: black; 
+    } 
+
     @media (max-width: 768px) {
       .header{
         display: flex;
@@ -53,16 +64,8 @@
       
     }
 
-    .header_links a {
-      text-decoration: none;
-      color: black; // or your default link color
-    }
-    
-    .header_links .active-link {
-      text-decoration: underline;
-      color: black; // or your active link color
-    } 
-    
+  
+
   }
   @media (max-width: 339px) {
     .header_image{

@@ -35,7 +35,10 @@ $gap: 25px;
   display: flex;
  margin-top: 20px;
   align-items:center ;
+  justify-content: center;
   flex-direction: column;
+  width: 100% !important;
+
 }
 
 .img_apropos{
@@ -59,16 +62,18 @@ $gap: 25px;
   .accueil_links a.active {
     text-decoration: underline;
   }
-
-  
   @media (max-width: 768px){
  
   .banner_container{
 margin-bottom: 30px !important;
   }
 
+  .about_parent_container{
+    width:80% !important;
+  }
+
 .about_container{
-  width:80% !important;
+  width:100% !important;
 }
 
 }}

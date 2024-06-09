@@ -121,7 +121,7 @@ $white-color: #ffffff;
 
   .dropdown_main_div {
     flex-direction: column;
-    width: 100%;
+    width: 90% ! important;
   
   }
 
@@ -133,6 +133,6 @@ $white-color: #ffffff;
   .logement_title_div_right {
     flex-direction: row-reverse !important;
     
-    width:100%;
+    width:90%;
   }
 }
