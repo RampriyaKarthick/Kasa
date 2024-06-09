@@ -11,9 +11,30 @@
       margin-top: 50px;
     }
   
-    p {
+  .footer_text{
       color: white;
-      margin-bottom: 50px;
+      margin-bottom: 25px;
+    }
+    
+
+    @media (max-width: 768px){
+     
+      .footer_text{
+        margin-left: 25px;
+        margin-top: 0px;
+      }
+      .para_div{
+       
+        margin: 25px;
+      }
+    }
+
+    @media (max-width: 230px){
+      .para_div{
+     
+        margin: 15px;
+        margin-top: 0 !important;
+      }
     }
   }
   

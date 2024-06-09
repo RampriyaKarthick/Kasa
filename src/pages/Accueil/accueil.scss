@@ -90,9 +90,17 @@ justify-content: space-between;
 }
 
 @media (max-width: 768px) {
+  .welcomecontent_image-container{
+    margin-bottom: 0px;
+  }
+
+  .links{
+    margin-left: 125px !important
+  }
   .kasa-logement-list {
     grid-template-columns: 1fr;
     gap: 16px;
+    background-color: transparent;
   }
 
   .kasa-logement-div {
@@ -131,6 +139,12 @@ justify-content: space-between;
   flex-direction: row-reverse !important;
 }
 
+.img_banner{
+  width:85% !important;
+}
+.accueil_links{
+margin-right: 40px !important;
+}
 
 
 }

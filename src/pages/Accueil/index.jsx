@@ -18,7 +18,7 @@ function Home() {
       <Header />
       <div className="content-container">
         <div className="welcomecontent_image-container">
-          <Banner src={rock} alt="welcome_page_image" showText={true} />
+          <Banner src={rock} alt="welcome_page_image" showText={true} isAbout={true} />
         </div>
         <div className="main-div">
           <ul className="kasa-logement-list">

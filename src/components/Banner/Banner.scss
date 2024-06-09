@@ -13,9 +13,9 @@
   .banner-img {
     display: flex;
     justify-content: center;
-    margin: $gap 0;
+    margin-top:20px;
     height: $image-height;
-    width: $image-width;
+    width:100%;
     border-radius: $border-radius-large;
     object-fit:cover;
    
@@ -28,11 +28,22 @@
 
   .banner-text {
     position: absolute;
-   
+
     left: 50%;
     transform: translateX(-50%);
     color: white;
     font-size: 24px;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  @media (max-width: 768px){
+    .banner-text{
+      left:39%;
+      text-align: start;
+    }
+    .banner_span{
+      display: block;
+    }
+   
   }

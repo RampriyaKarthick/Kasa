@@ -24,6 +24,7 @@ $gap: 25px;
   flex-direction: column;
   align-content: center;
   width: $content-width;
+ margin:5px;
 
   p {
     margin: $margin-small $margin-large;
@@ -32,9 +33,13 @@ $gap: 25px;
 
 .about_parent_container {
   display: flex;
- 
+ margin-top: 20px;
   align-items:center ;
   flex-direction: column;
+}
+
+.img_apropos{
+  width:90% !important;
 }
 
 .about_title_container {
@@ -50,5 +55,22 @@ $gap: 25px;
     font-size: 16px;
     margin: 0;
   }
+
+  .accueil_links a.active {
+    text-decoration: underline;
+  }
+
+  
+  @media (max-width: 768px){
+ 
+  .banner_container{
+margin-bottom: 30px !important;
+  }
+
+.about_container{
+  width:80% !important;
 }
+
+}}
+
 
