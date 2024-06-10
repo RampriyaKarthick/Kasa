@@ -63,7 +63,10 @@
    
       
     }
-
+    .header_links a {
+  
+      text-transform: uppercase !important
+    }
   
 
   }
@@ -73,14 +76,17 @@
     }
     .header_image img{
       height: 20px;
-   
-     
-    }
+   }
 
     .header_links {
    
       margin-left: 1px;
      
+     
+  }
+  .header_links a {
+  
+    text-transform: uppercase !important
   }
 }
 }
